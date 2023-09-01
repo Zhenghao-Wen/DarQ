@@ -92,7 +92,7 @@
     <string name="dialog_location_permission_use_location">استخدام الموقع</string>
     <string name="dialog_location_permission_use_timezone">استخدم المنطقة الزمنية\n<small>(أقل دقة)</small></string>
     <string name="chip_donate">تبرع</string>
-    <string name="chip_twitter">تابعني على تويتر Twitter</string>
+    <string name="chip_twitter">تابعني على تويتر</string>
     <string name="chip_github">GitHub</string>
     <string name="chip_xda">XDA</string>
     <string name="menu_open_source_libraries">مكتبات مفتوحة المصدر</string>
