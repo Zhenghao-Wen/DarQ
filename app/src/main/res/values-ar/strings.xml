@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">DarQ</string>
-    <string name="xposed_desc">منع التطبيقات من تعطيل استخدام Force Dark</string>
+    <string name="xposed_desc">منع التطبيقات من تعطيل فرض الوضع الداكن</string>
     <string name="item_switch_main_title">تمكين DarQ</string>
     <string name="item_switch_main_subtitle">يعمل DarQ فقط عندما يكون النظام في الوضع الداكن</string>
     <string name="item_switch_main_subtitle_off">يتطلب DarQ تمكين الوضع الداكن للنظام لكي يعمل</string>
@@ -40,7 +40,7 @@
     <string name="item_backup_restore_restore_success">تمت الاستعادة بنجاح</string>
     <string name="item_backup_restore_restore_failed">فشلت عملية الاستعادة</string>
     <string name="item_backup_restore_restore_running">استعادة النسخة الاحتياطية...</string>
-    <string name="item_backup_restore_restore">يعيد</string>
+    <string name="item_backup_restore_restore">استعادة</string>
     <string name="item_xposed_title">Xposed إضافة</string>
     <string name="item_xposed_content">تغيير إعدادات إضافة DarQ Xposed</string>
     <string name="item_xposed_aggressive_dark_title">فرض الوضع الداكن بشكل عدواني</string>
