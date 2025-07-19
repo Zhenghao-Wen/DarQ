@@ -2,7 +2,7 @@
 
 ![DarQ](https://i.imgur.com/PFfaGMrl.png)
 
-[![Build debug apk](https://github.com/Zhenghao-Wen/DarQ/actions/workflows/android.yml/badge.svg)](https://github.com/Zhenghao-Wen/DarQ/actions/workflows/android.yml)
+[[Build debug apk](https://github.com/Zhenghao-Wen/DarQ/actions/workflows/android.yml/badge.svg)](https://github.com/Zhenghao-Wen/DarQ/actions/workflows/android.yml)
 
 DarQ provides a per-app selectable force dark option for Android 10 and above. 
 
