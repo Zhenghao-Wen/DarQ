@@ -1,14 +1,15 @@
 name: Build debug apk
 
 on:
-  workflow_dispatch
+  workflow_dispatch # 保持手动触发
 
 jobs:
-  pre_build:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4 # 可以一并升级到 v4
+
       - name: set up JDK 11
         uses: actions/setup-java@v4
         with:
@@ -18,24 +19,14 @@ jobs:
 
       - name: Grant execute permissions for gradlew
         run: chmod +x gradlew
-      - name: Build with Gradle
-        run: ./gradlew build
 
-  build_apk:
-    needs: [pre_build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout the code
-        uses: actions/checkout@v2
-        
-      - name: Grant execute permissions for gradlew
-        run: chmod +x gradlew
-        
-      - name: Build unsigned debug apk
+      # 执行完整的构建和打包。assembleDebug 会编译并生成 APK
+      - name: Build with Gradle
         run: ./gradlew assembleDebug
 
+      # 关键修改：将上传 artifact 的 action 升级到 v4
       - name: Upload debug apk
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: apk-debug
           path: app/build/outputs/apk/debug
